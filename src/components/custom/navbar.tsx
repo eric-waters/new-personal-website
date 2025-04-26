@@ -8,6 +8,7 @@ import {
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
 import { div } from "motion/react-client";
+import { ModeToggle } from "../next/ModeToggle";
 
 const menuItems = [
   { name: "Home", href: "/" },
@@ -32,6 +33,9 @@ export default function Navbar() {
               </NavigationMenuLink>
             </NavigationMenuItem>
           ))}
+          <div className="pl-3">
+            <ModeToggle />
+          </div>
         </NavigationMenuList>
       </NavigationMenu>
     </div>
