@@ -15,6 +15,8 @@ export const InfiniteMovingCards = ({
     image: string;
     imageSize: number;
     description: string;
+    position: string;
+    date: string;
   }[];
   direction?: "left" | "right";
   speed?: "fast" | "normal" | "slow";
@@ -97,24 +99,20 @@ export const InfiniteMovingCards = ({
               width={item.imageSize}
               className="mb-5"
             />
-            <blockquote>
+            <blockquote className="flex flex-col">
               <div
                 aria-hidden="true"
                 className="user-select-none pointer-events-none absolute -top-0.5 -left-0.5 -z-1 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)]"
               ></div>
-              <span className="relative z-20 text-sm leading-[1.6] font-normal text-neutral-800 dark:text-gray-100">
-                {item.description}
-              </span>
-              {/* <div className="relative z-20 mt-6 flex flex-row items-center">
+              <div className="flex flex-row">
                 <span className="flex flex-col gap-1">
-                  <span className="text-sm leading-[1.6] font-normal text-neutral-500 dark:text-gray-400">
-                    {item.name}
+                  <span className="text-sm font-medium">{item.position}</span>
+                  <span className="text-sm text-zinc-600 dark:text-zinc-400">
+                    {item.date}
                   </span>
-                  <span className="text-sm leading-[1.6] font-normal text-neutral-500 dark:text-gray-400">
-                    {item.title}
-                  </span>
+                  <span className="text-sm mt-2">{item.description}</span>
                 </span>
-              </div> */}
+              </div>
             </blockquote>
           </li>
         ))}

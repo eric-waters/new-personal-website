@@ -18,6 +18,7 @@ import {
 } from "../ui/drawer";
 import { Button } from "../ui/button";
 import { IconCode, IconMenu2, IconMoodSmileBeam } from "@tabler/icons-react";
+import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
 
 const menuItems = [
   { name: "Home", href: "/" },
@@ -31,7 +32,11 @@ export default function Navbar() {
   return (
     <div className="flex justify-between px-4 md:px-0 py-4 md:py-10 max-w-7xl mx-auto">
       <div className="text-base font-bold text-xl flex items-center">
-        <IconCode className="mr-2" /> Eric Waters
+        <Avatar className="mr-2">
+          <AvatarImage src="eric-color.jpg" alt="@shadcn" />
+          <AvatarFallback>CN</AvatarFallback>
+        </Avatar>
+        Eric Waters
       </div>
       <div className="flex">
         <NavigationMenu className="hidden md:flex">
