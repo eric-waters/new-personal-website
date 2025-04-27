@@ -3,11 +3,46 @@
 import { motion } from "motion/react";
 import Navbar from "./navbar";
 import { LinksDock } from "./links-dock";
+import { InfiniteMovingCards } from "../ui/infinite-moving-cards";
+import {
+  IconBrandFacebook,
+  IconBrandGithub,
+  IconBrandInstagram,
+  IconBrandLinkedin,
+  IconBrandMeta,
+  IconDownload,
+  IconMail,
+} from "@tabler/icons-react";
+import { Button } from "../ui/button";
+
+const testimonials = [
+  {
+    name: "Intel",
+    image: "intel-logo.png",
+    imageSize: 100,
+    description:
+      "Intel Corporation is an American multinational corporation and technology company headquartered in Santa Clara, California, in Silicon Valley. It is the primary supplier of semiconductor chips for computer systems.",
+  },
+  {
+    name: "Dell",
+    image: "dell-logo.png",
+    imageSize: 300,
+    description:
+      "Intel Corporation is an American multinational corporation and technology company headquartered in Santa Clara, California, in Silicon Valley. It is the primary supplier of semiconductor chips for computer systems.",
+  },
+  {
+    name: "ASU",
+    image: "asu-logo.png",
+    imageSize: 200,
+    description:
+      "Intel Corporation is an American multinational corporation and technology company headquartered in Santa Clara, California, in Silicon Valley. It is the primary supplier of semiconductor chips for computer systems.",
+  },
+];
 
 export default function HeroSectionOne() {
   return (
     <>
-      <div className="relative mx-auto my-1 md:my-10 flex max-w-7xl flex-col items-center justify-center border-t border-neutral-200 dark:border-neutral-800">
+      <div className="relative mx-auto my-1 md:my-10 py-20 flex max-w-7xl flex-col items-center justify-center border-t border-neutral-200 dark:border-neutral-800">
         <div className="absolute inset-y-0 left-0 h-full w-px bg-neutral-200/80 dark:bg-neutral-800/80">
           <div className="absolute top-0 h-40 w-px bg-gradient-to-b from-transparent via-blue-500 to-transparent" />
         </div>
@@ -17,8 +52,8 @@ export default function HeroSectionOne() {
         <div className="absolute inset-x-0 bottom-0 h-px w-full bg-neutral-200/80 dark:bg-neutral-800/80">
           <div className="absolute mx-auto h-px w-40 bg-gradient-to-r from-transparent via-blue-500 to-transparent" />
         </div>
-        <div className="px-4 py-10 md:py-20">
-          <h1 className="relative z-10 mx-auto max-w-4xl text-center text-2xl font-bold text-slate-700 md:text-4xl lg:text-7xl dark:text-slate-300">
+        <div className="py-10 md:py-20 w-full">
+          <h1 className="relative z-10 mx-auto max-w-4xl text-center text-2xl font-bold md:text-4xl lg:text-7xl">
             {"Hi, I'm Eric 👋".split(" ").map((word, index) => (
               <motion.span
                 key={index}
@@ -46,7 +81,7 @@ export default function HeroSectionOne() {
               duration: 0.3,
               delay: 0.8,
             }}
-            className="relative z-10 mx-auto max-w-xl py-4 text-center text-lg font-normal text-neutral-600 dark:text-neutral-400"
+            className="relative z-10 mx-auto max-w-xl px-4 md:px-0 py-4 text-center text-lg font-normal text-neutral-600 dark:text-neutral-400"
           >
             I'm a software engineer with a proven track record of writing
             quality software solutions. Passionate about building scalable,
@@ -64,17 +99,82 @@ export default function HeroSectionOne() {
               duration: 0.3,
               delay: 1,
             }}
-            className="relative z-10 mt-8 flex flex-wrap items-center justify-center gap-4"
           >
-            <button className="w-60 transform rounded-lg bg-black px-6 py-2 font-medium text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-gray-800 dark:bg-white dark:text-black dark:hover:bg-gray-200">
-              Explore Now
-            </button>
-            <button className="w-60 transform rounded-lg border border-gray-300 bg-white px-6 py-2 font-medium text-black transition-all duration-300 hover:-translate-y-0.5 hover:bg-gray-100 dark:border-gray-700 dark:bg-black dark:text-white dark:hover:bg-gray-900">
-              Contact Support
-            </button>
-            <LinksDock />
+            <div className="flex justify-center gap-4 mt-8 px-4 md:px-0">
+              <a href="/resume.pdf" download>
+                <button className="w-60 flex items-center justify-center gap-2 transform rounded-lg bg-black px-6 py-2 font-medium text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-gray-800 dark:bg-white dark:text-black dark:hover:bg-gray-200 cursor-pointer">
+                  <IconDownload />
+                  Resume
+                </button>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/eric-waters2019/"
+                target="_blank"
+              >
+                <button className="w-60 flex items-center justify-center gap-2 transform rounded-lg border border-gray-300 bg-white px-6 py-2 font-medium text-black transition-all duration-300 hover:-translate-y-0.5 hover:bg-gray-100 dark:border-gray-700 dark:bg-black dark:text-white dark:hover:bg-gray-900 cursor-pointer">
+                  <IconBrandLinkedin />
+                  LinkedIn
+                </button>
+              </a>
+            </div>
           </motion.div>
           <motion.div
+            initial={{
+              opacity: 0,
+              y: 10,
+            }}
+            animate={{
+              opacity: 1,
+              y: 0,
+            }}
+            transition={{
+              duration: 0.3,
+              delay: 1.2,
+            }}
+            className="relative z-10 mt-8 flex flex-wrap items-center justify-center gap-4"
+          >
+            {/* <LinksDock /> */}
+            <div className="h-[20rem] rounded-md flex flex-col antialiased dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
+              <InfiniteMovingCards
+                items={testimonials}
+                direction="right"
+                speed="slow"
+              />
+            </div>
+          </motion.div>
+          {/* <motion.div
+            initial={{
+              opacity: 0,
+              y: 10,
+            }}
+            animate={{
+              opacity: 1,
+              y: 0,
+            }}
+            transition={{
+              duration: 0.3,
+              delay: 1.5,
+            }}
+          >
+            <div className="flex text-center justify-center gap-4 mt-2">
+              <a href="https://github.com" target="_blank">
+                <IconBrandGithub size={35} />
+              </a>
+              <a href="https://github.com" target="_blank">
+                <IconMail size={35} />
+              </a>
+              <a href="https://github.com" target="_blank">
+                <IconBrandLinkedin size={35} />
+              </a>
+              <a href="https://github.com" target="_blank">
+                <IconBrandFacebook size={35} />
+              </a>
+              <a href="https://github.com" target="_blank">
+                <IconBrandInstagram size={35} />
+              </a>
+            </div>
+          </motion.div> */}
+          {/* <motion.div
             initial={{
               opacity: 0,
               y: 10,
@@ -98,7 +198,7 @@ export default function HeroSectionOne() {
                 width={1000}
               />
             </div>
-          </motion.div>
+          </motion.div> */}
         </div>
       </div>
     </>
