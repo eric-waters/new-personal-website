@@ -56,7 +56,7 @@ const testimonials = [
 export default function HeroSectionOne() {
   return (
     <>
-      <div className="relative mx-auto my-1 md:my-10 py-10 flex max-w-7xl flex-col items-center justify-center">
+      <div className="relative my-1 md:my-10 py-10 flex w-full flex-col items-center justify-center">
         <BackgroundBeamsWithCollision className="bg-transparent">
           {/* <div className="absolute inset-y-0 left-0 h-full w-px bg-neutral-200/80 dark:bg-neutral-800/80">
             <div className="absolute top-0 h-40 w-px bg-gradient-to-b from-transparent via-blue-500 to-transparent" />
