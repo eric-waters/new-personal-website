@@ -17,7 +17,7 @@ import {
   DrawerTrigger,
 } from "../ui/drawer";
 import { Button } from "../ui/button";
-import { IconCode, IconMenu2, IconMoodSmileBeam } from "@tabler/icons-react";
+import { IconMenu2 } from "@tabler/icons-react";
 import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
 
 const menuItems = [

@@ -1,19 +1,8 @@
 "use client";
 
 import { motion } from "motion/react";
-import Navbar from "./navbar";
-import { LinksDock } from "./links-dock";
 import { InfiniteMovingCards } from "../ui/infinite-moving-cards";
-import {
-  IconBrandFacebook,
-  IconBrandGithub,
-  IconBrandInstagram,
-  IconBrandLinkedin,
-  IconBrandMeta,
-  IconDownload,
-  IconMail,
-} from "@tabler/icons-react";
-import { Button } from "../ui/button";
+import { IconBrandLinkedin, IconDownload } from "@tabler/icons-react";
 import { BackgroundBeamsWithCollision } from "../ui/background-beams-with-collision";
 
 const testimonials = [
@@ -23,7 +12,8 @@ const testimonials = [
     imageSize: 100,
     position: "Software Application Development Engineer",
     date: "August 2023 - Present",
-    description: "This is what I did at Intel.",
+    description:
+      "Created a drag-and-drop generative AI tool studio, redesigned an entire generative AI web platform, created an API to serve advanced ML analytics, and owned an internal search engine.",
   },
   {
     name: "ASU",
@@ -32,7 +22,7 @@ const testimonials = [
     position: "Computer Science (Big Data Systems), M.S.",
     date: "August 2022 - May 2023",
     description:
-      "This is what I did at ASU. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Studied Data Mining, Data Processing at Scale, Statistical Machine Learning, Data Visualization, Database Management System Implementation, and Mobile Computing.",
   },
   {
     name: "Dell",
@@ -41,7 +31,7 @@ const testimonials = [
     position: "Graduate Software Engineering Intern",
     date: "June 2022 - August 2022",
     description:
-      "This is what I did at Dell. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Implemented Sign in with Dell (OAuth SSO) for several applications and protected data integrity by implementing authorization for several Spring Boot REST APIs.",
   },
   {
     name: "ASU",
@@ -50,7 +40,7 @@ const testimonials = [
     position: "Computer Science, B.S.",
     date: "August 2019 - May 2022",
     description:
-      "This is what I did at ASU. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Studied Data Structures and Algorithms, Programming Languages, Operating Systems, Software Engineering, Database Management Systems, QA & Testing, and a bunch of math.",
   },
   {
     name: "Dell",
@@ -59,7 +49,7 @@ const testimonials = [
     position: "Undergraduate Software Engineering Intern",
     date: "May 2021 - August 2021",
     description:
-      "This is what I did at Dell. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Enhanced the efficiency of agile teams by creating a proprietary kanban board application using Spring MVC. Won the intern hackathon for streamlining the Employee Resource Group onboarding process.",
   },
 ];
 
@@ -158,95 +148,17 @@ export default function HeroSectionOne() {
               }}
               className="relative z-10 mt-8 flex flex-wrap items-center justify-center gap-4"
             >
-              {/* <LinksDock /> */}
               <div className="h-[20rem] rounded-md flex flex-col antialiased dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
                 <InfiniteMovingCards
                   items={testimonials}
                   direction="right"
-                  speed="slow"
+                  speed="normal"
                 />
               </div>
             </motion.div>
-            {/* <motion.div
-            initial={{
-              opacity: 0,
-              y: 10,
-            }}
-            animate={{
-              opacity: 1,
-              y: 0,
-            }}
-            transition={{
-              duration: 0.3,
-              delay: 1.5,
-            }}
-          >
-            <div className="flex text-center justify-center gap-4 mt-2">
-              <a href="https://github.com" target="_blank">
-                <IconBrandGithub size={35} />
-              </a>
-              <a href="https://github.com" target="_blank">
-                <IconMail size={35} />
-              </a>
-              <a href="https://github.com" target="_blank">
-                <IconBrandLinkedin size={35} />
-              </a>
-              <a href="https://github.com" target="_blank">
-                <IconBrandFacebook size={35} />
-              </a>
-              <a href="https://github.com" target="_blank">
-                <IconBrandInstagram size={35} />
-              </a>
-            </div>
-          </motion.div> */}
-            {/* <motion.div
-            initial={{
-              opacity: 0,
-              y: 10,
-            }}
-            animate={{
-              opacity: 1,
-              y: 0,
-            }}
-            transition={{
-              duration: 0.3,
-              delay: 1.2,
-            }}
-            className="relative z-10 mt-20 rounded-3xl border border-neutral-200 bg-neutral-100 p-4 shadow-md dark:border-neutral-800 dark:bg-neutral-900"
-          >
-            <div className="w-full overflow-hidden rounded-xl border border-gray-300 dark:border-gray-700">
-              <img
-                src="https://assets.aceternity.com/pro/aceternity-landing.webp"
-                alt="Landing page preview"
-                className="aspect-[16/9] h-auto w-full object-cover"
-                height={1000}
-                width={1000}
-              />
-            </div>
-          </motion.div> */}
           </div>
         </BackgroundBeamsWithCollision>
       </div>
     </>
   );
 }
-
-// const Navbar = () => {
-//   return (
-//     <nav className="flex w-full items-center justify-between border-t border-b border-neutral-200 px-4 py-4 dark:border-neutral-800">
-//       <div className="flex items-center gap-2">
-//         <div className="size-7 rounded-full bg-gradient-to-br from-violet-500 to-pink-500" />
-//         <h1 className="text-base font-bold md:text-2xl">Eric Waters</h1>
-//       </div>
-//       <button className="w-24 transform rounded-lg bg-black px-6 py-2 font-medium text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-gray-800 md:w-32 dark:bg-white dark:text-black dark:hover:bg-gray-200">
-//         Login
-//       </button>
-//       <button className="w-24 transform rounded-lg bg-black px-6 py-2 font-medium text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-gray-800 md:w-32 dark:bg-white dark:text-black dark:hover:bg-gray-200">
-//         Login
-//       </button>
-//       <button className="w-24 transform rounded-lg bg-black px-6 py-2 font-medium text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-gray-800 md:w-32 dark:bg-white dark:text-black dark:hover:bg-gray-200">
-//         Login
-//       </button>
-//     </nav>
-//   );
-// };
