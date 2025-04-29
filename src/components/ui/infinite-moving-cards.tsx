@@ -25,6 +25,7 @@ export const InfiniteMovingCards = ({
 }) => {
   const containerRef = React.useRef<HTMLDivElement>(null);
   const scrollerRef = React.useRef<HTMLUListElement>(null);
+  const duplicationFlag = React.useRef(false); // Persist duplication flag across re-renders
 
   useEffect(() => {
     addAnimation();
@@ -32,14 +33,18 @@ export const InfiniteMovingCards = ({
   const [start, setStart] = useState(false);
   function addAnimation() {
     if (containerRef.current && scrollerRef.current) {
-      const scrollerContent = Array.from(scrollerRef.current.children);
+      // Prevent duplicating items multiple times
+      if (!duplicationFlag.current) {
+        const scrollerContent = Array.from(scrollerRef.current.children);
 
-      scrollerContent.forEach((item) => {
-        const duplicatedItem = item.cloneNode(true);
-        if (scrollerRef.current) {
-          scrollerRef.current.appendChild(duplicatedItem);
-        }
-      });
+        scrollerContent.forEach((item) => {
+          const duplicatedItem = item.cloneNode(true);
+          if (scrollerRef.current) {
+            scrollerRef.current.appendChild(duplicatedItem);
+          }
+        });
+        duplicationFlag.current = true; // Set the flag to true after duplication
+      }
 
       getDirection();
       getSpeed();
