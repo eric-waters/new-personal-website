@@ -32,7 +32,7 @@ const menuItems = [
 export default function Navbar() {
   return (
     <div className="flex justify-between px-4 md:px-0 py-4 md:py-10 w-full">
-      <div className="text-base font-bold text-xl flex items-center">
+      <div className="font-bold text-xl flex items-center">
         <Avatar className="mr-2">
           <AvatarImage src="eric-color.jpg" alt="Eric Waters" />
           <AvatarFallback>CN</AvatarFallback>

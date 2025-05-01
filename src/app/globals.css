@@ -133,3 +133,8 @@
     }
   }
 }
+
+.bold-important {
+  font-weight: bold !important;
+  display: inline !important;
+}

@@ -29,7 +29,11 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
     offset: ["start 10%", "end 50%"],
   });
 
-  const heightTransform = useTransform(scrollYProgress, [0, 1], [0, height]);
+  const heightTransform = useTransform(
+    scrollYProgress,
+    [0, 1],
+    [0, height] // Adjust the multiplier as needed
+  );
   const opacityTransform = useTransform(scrollYProgress, [0, 0.1], [0, 1]);
 
   return (
@@ -37,12 +41,12 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
       className="w-full bg-white dark:bg-neutral-950 font-sans md:px-10"
       ref={containerRef}
     >
-      <div className="max-w-7xl mx-auto py-20 px-4 md:px-8 lg:px-10">
+      <div className="max-w-7xl mx-auto py-10 md:py-15 px-4 md:px-8 lg:px-10">
         <h2 className="text-lg md:text-4xl mb-4 text-black dark:text-white max-w-4xl">
-          Growing fast. Delivering with impact.
+          Growing rapidly. Delivering with impact.
         </h2>
-        <p className="text-neutral-700 dark:text-neutral-300 text-sm md:text-base max-w-sm">
-          Seven years of coding and two years of industry experience.
+        <p className="text-neutral-700 dark:text-neutral-300 max-w-md">
+          7+ years of coding and 2+ years of developing professional solutions.
         </p>
       </div>
 
