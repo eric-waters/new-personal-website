@@ -9,6 +9,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import { Button } from "@/components/ui/button";
+import { IconBrandYoutubeFilled, IconDownload } from "@tabler/icons-react";
 
 export default function Experience() {
   const mastersCarouselData = [
@@ -92,7 +93,10 @@ export default function Experience() {
               <div className="absolute inset-0 flex flex-col gap-5 items-center justify-center dark:text-white sm:text-2xl font-bold px-10 mx-auto">
                 <div className="text-center">{item.title}</div>
                 <a className="cursor-pointer" href={item.link} download>
-                  <Button className="cursor-pointer">Explore</Button>
+                  <Button className="cursor-pointer">
+                    <IconDownload />
+                    Download
+                  </Button>
                 </a>
               </div>
             </CarouselItem>
@@ -157,7 +161,10 @@ export default function Experience() {
                 href="papers/pdfs/undergrad-thesis-party-on-wall-street.pdf"
                 download
               >
-                <Button className="cursor-pointer">Explore</Button>
+                <Button className="cursor-pointer">
+                  <IconDownload />
+                  Download
+                </Button>
               </a>
             </div>
           </CarouselItem>
@@ -179,7 +186,10 @@ export default function Experience() {
                 href="https://youtu.be/gXEd-HVifVI?si=C152_wEGmC8HLu_B"
                 target="_blank"
               >
-                <Button className="cursor-pointer">Explore</Button>
+                <Button className="cursor-pointer">
+                  <IconBrandYoutubeFilled />
+                  Watch Demo
+                </Button>
               </a>
             </div>
           </CarouselItem>
@@ -198,9 +208,9 @@ export default function Experience() {
         transition={{ duration: 1 }}
       >
         <div className="text-4xl md:text-6xl font-bold">
-          An academic weapon. 📚
+          An Academic Weapon 📚
         </div>
-        <div className="text-lg font-normal text-neutral-600 dark:text-neutral-400 mt-5">
+        <div className="text-lg text-neutral-600 dark:text-neutral-400 mt-5">
           4 years, 2 degrees, and a 4.0 GPA all the way.
         </div>
       </motion.div>
