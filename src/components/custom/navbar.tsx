@@ -32,13 +32,16 @@ const menuItems = [
 export default function Navbar() {
   return (
     <div className="flex justify-between px-4 md:px-0 py-4 md:py-10 w-full">
-      <div className="font-bold text-xl flex items-center">
+      <Link
+        href="/"
+        className="font-bold text-xl flex items-center cursor-pointer"
+      >
         <Avatar className="mr-2">
           <AvatarImage src="eric-color.jpg" alt="Eric Waters" />
           <AvatarFallback>CN</AvatarFallback>
         </Avatar>
         Eric Waters
-      </div>
+      </Link>
       <div className="flex">
         <NavigationMenu className="hidden md:flex">
           <NavigationMenuList>
