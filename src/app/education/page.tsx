@@ -137,10 +137,7 @@ export default function Experience() {
       </>
     ),
     carousel: (
-      <Carousel
-        className="w-full mx-auto border-3 border-neutral-600 dark:border-0 rounded"
-        opts={{ loop: true }}
-      >
+      <Carousel className="w-full mx-auto border-3 border-neutral-600 dark:border-0 rounded">
         <CarouselContent>
           <CarouselItem className="relative">
             <Image
