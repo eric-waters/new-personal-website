@@ -16,29 +16,39 @@ export default function Experience() {
             Software Application Development Engineer at Intel
           </p> */}
           <div className="my-8">
-            <div className="gap-2 text-sm text-neutral-700 md:text-base dark:text-neutral-300">
-              ✅ Developed a scalable <strong>internal web platform</strong> for
-              Generative AI tools using <strong>Angular</strong>,{" "}
-              <strong>Sanic</strong>, and
-              <strong> microfrontend architecture</strong>, enabling teams to
-              efficiently build AI-powered apps by creating modular components,
-              standardizing the UI, and implementing robust API integrations.
+            <div className="flex items-start gap-2 text-sm text-neutral-700 md:text-base dark:text-neutral-300">
+              <div>✅</div>
+              <div>
+                Developed a scalable <strong>internal web platform</strong> for
+                Generative AI tools using <strong>Angular</strong>,{" "}
+                <strong>Sanic</strong>, and
+                <strong> microfrontend architecture</strong>, enabling teams to
+                efficiently build AI-powered apps by creating modular
+                components, standardizing the UI, and implementing robust API
+                integrations.
+              </div>
             </div>
-            <div className="gap-2 text-sm text-neutral-700 md:text-base dark:text-neutral-300">
-              ✅ Built and deployed a scalable <strong>Python API</strong> using{" "}
-              <strong>FastAPI</strong>, <strong>OAuth</strong>,
-              <strong> Docker</strong>, and <strong>Kubernetes</strong> to
-              expose ML analytics and data caching from a high-traffic
-              application (4,000+ MAUs), enabling secure, rapid integration
-              across internal applications.
+            <div className="flex items-start gap-2 text-sm text-neutral-700 md:text-base dark:text-neutral-300">
+              <div>✅</div>
+              <div>
+                Built and deployed a scalable <strong>Python API</strong> using{" "}
+                <strong>FastAPI</strong>, <strong>OAuth</strong>,
+                <strong> Docker</strong>, and <strong>Kubernetes</strong> to
+                expose ML analytics and data caching from a high-traffic
+                application (4,000+ MAUs), enabling secure, rapid integration
+                across internal applications.
+              </div>
             </div>
-            <div className="gap-2 text-sm text-neutral-700 md:text-base dark:text-neutral-300">
-              ✅ Soley owned and administrated a company-wide{" "}
-              <strong>cognitive search platform</strong>, developing extensive
-              <strong> ETL scripts</strong> using <strong>Pandas</strong> and{" "}
-              <strong>SQLAlchemy</strong> to ingest and normalize enterprise
-              data; partnered across business units to identify, map, and
-              integrate diverse data sources.
+            <div className="flex items-start gap-2 text-sm text-neutral-700 md:text-base dark:text-neutral-300">
+              <div>✅</div>
+              <div>
+                Soley owned and administrated a company-wide{" "}
+                <strong>cognitive search platform</strong>, developing extensive
+                <strong> ETL scripts</strong> using <strong>Pandas</strong> and{" "}
+                <strong>SQLAlchemy</strong> to ingest and normalize enterprise
+                data; partnered across business units to identify, map, and
+                integrate diverse data sources.
+              </div>
             </div>
           </div>
 
@@ -70,19 +80,25 @@ export default function Experience() {
             Graduate Software Engineering Intern
           </div>
           <div className="my-8">
-            <div className="gap-2 text-sm text-neutral-700 md:text-base dark:text-neutral-300">
-              ✅ Improved user experience of several applications by{" "}
-              <strong>reducing login time by 400%</strong> through the
-              implementation of “Sign in with Dell” (SSO) using{" "}
-              <strong>OAuth</strong> and <strong>VMware Tanzu</strong>.
+            <div className="flex items-start gap-2 text-sm text-neutral-700 md:text-base dark:text-neutral-300">
+              <div>✅</div>
+              <div>
+                Improved user experience of several applications by{" "}
+                <strong>reducing login time by 400%</strong> through the
+                implementation of “Sign in with Dell” (SSO) using{" "}
+                <strong>OAuth</strong> and <strong>VMware Tanzu</strong>.
+              </div>
             </div>
-            <div className="gap-2 text-sm text-neutral-700 md:text-base dark:text-neutral-300">
-              ✅ <strong>Safeguarded sensitive data</strong> and ensured
-              regulatory compliance by implementing fine-grained authorization
-              controls in multiple <strong>REST APIs</strong> using{" "}
-              <strong>Spring Boot</strong>, <strong>Spring Security</strong>,{" "}
-              <strong>Angular</strong>, and <strong>Oracle Database</strong>
-              —preventing potential legal penalties and data breaches.
+            <div className="flex items-start gap-2 text-sm text-neutral-700 md:text-base dark:text-neutral-300">
+              <div>✅</div>
+              <div>
+                <strong>Safeguarded sensitive data</strong> and ensured
+                regulatory compliance by implementing fine-grained authorization
+                controls in multiple <strong>REST APIs</strong> using{" "}
+                <strong>Spring Boot</strong>, <strong>Spring Security</strong>,{" "}
+                <strong>Angular</strong>, and <strong>Oracle Database</strong>
+                —preventing potential legal penalties and data breaches.
+              </div>
             </div>
           </div>
 
@@ -114,19 +130,25 @@ export default function Experience() {
             Undergraduate Software Engineering Intern
           </div>
           <div className="my-8">
-            <div className="gap-2 text-sm text-neutral-700 md:text-base dark:text-neutral-300">
-              ✅ Developed a{" "}
-              <strong>proprietary Kanban Board application</strong> using{" "}
-              <strong>Spring MVC</strong>, <strong>MySQL</strong>,{" "}
-              <strong>jQuery</strong>, and <strong>Bootstrap</strong>,
-              significantly improving task tracking and collaboration for Agile
-              teams.
+            <div className="flex items-start gap-2 text-sm text-neutral-700 md:text-base dark:text-neutral-300">
+              <div>✅</div>
+              <div>
+                Developed a{" "}
+                <strong>proprietary Kanban Board application</strong> using{" "}
+                <strong>Spring MVC</strong>, <strong>MySQL</strong>,{" "}
+                <strong>jQuery</strong>, and <strong>Bootstrap</strong>,
+                significantly improving task tracking and collaboration for
+                Agile teams.
+              </div>
             </div>
-            <div className="gap-2 text-sm text-neutral-700 md:text-base dark:text-neutral-300">
-              ✅ <strong>Streamlined the onboarding process</strong> for
-              Employee Resource Groups, earning{" "}
-              <strong>1st place in the Dell Intern Hackathon</strong> for
-              delivering a high-impact, user-centric solution.
+            <div className="flex items-start gap-2 text-sm text-neutral-700 md:text-base dark:text-neutral-300">
+              <div>✅</div>
+              <div>
+                <strong>Streamlined the onboarding process</strong> for Employee
+                Resource Groups, earning{" "}
+                <strong>1st place in the Dell Intern Hackathon</strong> for
+                delivering a high-impact, user-centric solution.
+              </div>
             </div>
           </div>
 

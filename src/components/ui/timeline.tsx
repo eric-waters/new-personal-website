@@ -46,7 +46,8 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
             Quality Code, Real Results 🔧
           </h2>
           <p className="text-lg text-neutral-600 dark:text-neutral-400 mt-5">
-            Over 2 years building and shipping full-stack applications.
+            Over 2 years of professionally building and shipping full-stack
+            applications.
           </p>
         </div>
       </motion.div>
