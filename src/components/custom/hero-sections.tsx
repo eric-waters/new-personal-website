@@ -3,7 +3,6 @@
 import { motion } from "motion/react";
 import { InfiniteMovingCards } from "../ui/infinite-moving-cards";
 import { IconBrandLinkedin, IconDownload } from "@tabler/icons-react";
-import { BackgroundBeamsWithCollision } from "../ui/background-beams-with-collision";
 
 const testimonials = [
   {
@@ -53,111 +52,100 @@ const testimonials = [
   },
 ];
 
-export default function HeroSectionOne() {
+export default function HeroSection() {
   return (
     <>
       <div className="relative my-1 md:my-10 py-10 flex w-full flex-col items-center justify-center">
-        <BackgroundBeamsWithCollision className="bg-transparent">
-          {/* <div className="absolute inset-y-0 left-0 h-full w-px bg-neutral-200/80 dark:bg-neutral-800/80">
-            <div className="absolute top-0 h-40 w-px bg-gradient-to-b from-transparent via-blue-500 to-transparent" />
-          </div>
-          <div className="absolute inset-y-0 right-0 h-full w-px bg-neutral-200/80 dark:bg-neutral-800/80">
-            <div className="absolute h-40 w-px bg-gradient-to-b from-transparent via-blue-500 to-transparent" />
-          </div>
-          <div className="absolute inset-x-0 bottom-0 h-px w-full bg-neutral-200/80 dark:bg-neutral-800/80">
-            <div className="absolute mx-auto h-px w-40 bg-gradient-to-r from-transparent via-blue-500 to-transparent" />
-          </div> */}
-          <div className="py-10 md:py-20 w-full">
-            <h1 className="relative z-10 mx-auto max-w-4xl text-center text-4xl font-bold lg:text-7xl">
-              {"Hi, I'm Eric 👋".split(" ").map((word, index) => (
-                <motion.span
-                  key={index}
-                  initial={{ opacity: 0, filter: "blur(4px)", y: 10 }}
-                  animate={{ opacity: 1, filter: "blur(0px)", y: 0 }}
-                  transition={{
-                    duration: 0.3,
-                    delay: index * 0.1,
-                    ease: "easeInOut",
-                  }}
-                  className="mr-2 inline-block"
-                >
-                  {word}
-                </motion.span>
-              ))}
-            </h1>
-            <motion.p
-              initial={{
-                opacity: 0,
-              }}
-              animate={{
-                opacity: 1,
-              }}
-              transition={{
-                duration: 0.3,
-                delay: 0.8,
-              }}
-              className="relative z-10 mx-auto max-w-2xl px-4 md:px-0 py-4 text-center text-lg font-normal text-neutral-600 dark:text-neutral-400"
-            >
-              I'm a software engineer with a proven track record of writing
-              quality software solutions. Passionate about building scalable,
-              user-friendly applications and continuously learning new
-              technologies to improve my craft.
-            </motion.p>
-            <motion.div
-              initial={{
-                opacity: 0,
-              }}
-              animate={{
-                opacity: 1,
-              }}
-              transition={{
-                duration: 0.3,
-                delay: 1,
-              }}
-            >
-              <div className="flex justify-center gap-4 mt-8 px-4">
-                <a href="/resume.pdf" download>
-                  <button className="w-40 flex items-center justify-center gap-2 transform rounded-lg bg-black px-6 py-2 font-medium text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-gray-800 dark:bg-white dark:text-black dark:hover:bg-gray-200 cursor-pointer">
-                    <IconDownload />
-                    Resume
-                  </button>
-                </a>
-                <a
-                  href="https://www.linkedin.com/in/eric-waters2019/"
-                  target="_blank"
-                >
-                  <button className="w-40 flex items-center justify-center gap-2 transform rounded-lg border border-gray-300 bg-white px-6 py-2 font-medium text-black transition-all duration-300 hover:-translate-y-0.5 hover:bg-gray-100 dark:border-gray-700 dark:bg-black dark:text-white dark:hover:bg-gray-900 cursor-pointer">
-                    <IconBrandLinkedin />
-                    LinkedIn
-                  </button>
-                </a>
-              </div>
-            </motion.div>
-            <motion.div
-              initial={{
-                opacity: 0,
-                y: 10,
-              }}
-              animate={{
-                opacity: 1,
-                y: 0,
-              }}
-              transition={{
-                duration: 0.3,
-                delay: 1.2,
-              }}
-              className="relative z-10 mt-8 flex flex-wrap items-center justify-center gap-4"
-            >
-              <div className="h-[20rem] rounded-md flex flex-col antialiased dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
-                <InfiniteMovingCards
-                  items={testimonials}
-                  direction="right"
-                  speed="normal"
-                />
-              </div>
-            </motion.div>
-          </div>
-        </BackgroundBeamsWithCollision>
+        <div className="py-10 md:py-20 w-full">
+          <h1 className="relative z-10 mx-auto max-w-4xl text-center text-4xl font-bold lg:text-7xl">
+            {"Hi, I'm Eric 👋".split(" ").map((word, index) => (
+              <motion.span
+                key={index}
+                initial={{ opacity: 0, filter: "blur(4px)", y: 10 }}
+                animate={{ opacity: 1, filter: "blur(0px)", y: 0 }}
+                transition={{
+                  duration: 0.3,
+                  delay: index * 0.1,
+                  ease: "easeInOut",
+                }}
+                className="mr-2 inline-block"
+              >
+                {word}
+              </motion.span>
+            ))}
+          </h1>
+          <motion.p
+            initial={{
+              opacity: 0,
+            }}
+            animate={{
+              opacity: 1,
+            }}
+            transition={{
+              duration: 0.3,
+              delay: 0.8,
+            }}
+            className="relative z-10 mx-auto max-w-2xl px-4 md:px-0 py-4 text-center text-lg font-normal text-neutral-600 dark:text-neutral-400"
+          >
+            I'm a software engineer with a proven track record of writing
+            quality software solutions. Passionate about building scalable,
+            user-friendly applications and continuously learning new
+            technologies to improve my craft.
+          </motion.p>
+          <motion.div
+            initial={{
+              opacity: 0,
+            }}
+            animate={{
+              opacity: 1,
+            }}
+            transition={{
+              duration: 0.3,
+              delay: 1,
+            }}
+          >
+            <div className="flex justify-center gap-4 mt-8 px-4">
+              <a href="/resume.pdf" download>
+                <button className="w-40 flex items-center justify-center gap-2 transform rounded-lg bg-black px-6 py-2 font-medium text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-gray-800 dark:bg-white dark:text-black dark:hover:bg-gray-200 cursor-pointer">
+                  <IconDownload />
+                  Resume
+                </button>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/eric-waters2019/"
+                target="_blank"
+              >
+                <button className="w-40 flex items-center justify-center gap-2 transform rounded-lg border border-gray-300 bg-white px-6 py-2 font-medium text-black transition-all duration-300 hover:-translate-y-0.5 hover:bg-gray-100 dark:border-gray-700 dark:bg-black dark:text-white dark:hover:bg-gray-900 cursor-pointer">
+                  <IconBrandLinkedin />
+                  LinkedIn
+                </button>
+              </a>
+            </div>
+          </motion.div>
+          <motion.div
+            initial={{
+              opacity: 0,
+              y: 10,
+            }}
+            animate={{
+              opacity: 1,
+              y: 0,
+            }}
+            transition={{
+              duration: 0.3,
+              delay: 1.2,
+            }}
+            className="relative z-10 mt-8 flex flex-wrap items-center justify-center gap-4"
+          >
+            <div className="h-[20rem] rounded-md flex flex-col antialiased dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
+              <InfiniteMovingCards
+                items={testimonials}
+                direction="right"
+                speed="normal"
+              />
+            </div>
+          </motion.div>
+        </div>
       </div>
     </>
   );

@@ -35,7 +35,15 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <div className="container mx-auto">
+          <div
+            className="fixed inset-0 -z-20 bg-[url('/vscode-light.png')] dark:bg-[url('/vscode-dark.png')] opacity-15 dark:opacity-20"
+            style={{
+              backgroundRepeat: "repeat",
+              backgroundSize: "cover",
+            }}
+            aria-hidden="true"
+          />
+          <div className="container mx-auto z-0">
             <Navbar />
             {children}
           </div>

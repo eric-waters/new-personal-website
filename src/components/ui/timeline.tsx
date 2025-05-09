@@ -33,7 +33,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
 
   return (
     <div
-      className="w-full bg-white dark:bg-neutral-950 font-sans px-5 md:px-20 lg:px-40 mt-12 mb-24 lg:mt-20"
+      className="w-full font-sans px-5 md:px-20 lg:px-40 mt-12 mb-24 lg:mt-20"
       ref={containerRef}
     >
       <motion.div
