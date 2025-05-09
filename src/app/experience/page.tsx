@@ -12,9 +12,6 @@ export default function Experience() {
           <div className="text-xl text-neutral-700 dark:text-neutral-300">
             Software Application Development Engineer
           </div>
-          {/* <p className="mb-8 text-sm font-normal text-neutral-800 md:text-base dark:text-neutral-200">
-            Software Application Development Engineer at Intel
-          </p> */}
           <div className="my-8">
             <div className="flex items-start gap-2 text-sm text-neutral-700 md:text-base dark:text-neutral-300">
               <div>✅</div>
