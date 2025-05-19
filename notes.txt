@@ -1,2 +1,0 @@
-fix buttons especially in light mode
-make headings sound more professional, especially education section
