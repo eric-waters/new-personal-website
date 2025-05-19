@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/next/theme-provider";
 import Navbar from "@/components/custom/navbar";
+import { BackgroundGradientAnimation } from "@/components/ui/background-gradient-animation";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -35,17 +36,14 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <div
-            className="fixed inset-0 -z-20 bg-[url('/bg-light.jpg')] dark:bg-[url('/bg-dark.png')] opacity-30 dark:opacity-70"
-            style={{
-              backgroundRepeat: "repeat",
-              backgroundSize: "cover",
-            }}
-            aria-hidden="true"
-          />
-          <div className="container mx-auto">
-            <Navbar />
-            {children}
+          <div className="relative min-h-screen">
+            <div className="fixed inset-0 -z-10">
+              <BackgroundGradientAnimation interactive={false} size="100%" />
+            </div>
+            <div className="relative z-10 container mx-auto">
+              <Navbar />
+              {children}
+            </div>
           </div>
         </ThemeProvider>
       </body>

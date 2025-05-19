@@ -48,7 +48,9 @@ export default function Navbar() {
             {menuItems.map((item) => (
               <NavigationMenuItem key={item.name}>
                 <Link href={item.href} legacyBehavior passHref>
-                  <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                  <NavigationMenuLink
+                    className={navigationMenuTriggerStyle() + " bg-transparent"}
+                  >
                     {item.name}
                   </NavigationMenuLink>
                 </Link>

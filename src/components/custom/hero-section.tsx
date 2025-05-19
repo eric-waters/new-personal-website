@@ -85,7 +85,7 @@ export default function HeroSection() {
               duration: 0.3,
               delay: 0.8,
             }}
-            className="relative z-10 mx-auto max-w-2xl px-4 md:px-0 py-4 text-center text-lg font-normal text-neutral-600 dark:text-neutral-400"
+            className="relative z-10 mx-auto max-w-2xl px-4 md:px-0 py-4 text-center text-lg font-normal text-neutral-800 dark:text-neutral-200"
           >
             I'm a software engineer with a proven track record of writing
             quality software solutions. Passionate about building scalable,

@@ -1,1 +1,2 @@
-timeline for experience and education
+fix buttons especially in light mode
+make headings sound more professional, especially education section
