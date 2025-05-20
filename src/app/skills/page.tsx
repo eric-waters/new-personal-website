@@ -42,6 +42,18 @@ export default function Skills() {
           description:
             "A PHP framework for building web applications. I used it for a year-long capstone project where I built a full-stack contractor management system.",
         },
+        {
+          name: "OAuth 2.0",
+          image: "/skills/oauth.png",
+          description:
+            "An open standard for access delegation. I have used it in multiple projects to implement secure authentication and authorization flows.",
+        },
+        {
+          name: "FastAPI",
+          image: "/skills/fastapi.svg",
+          description:
+            "A modern web framework for building APIs with Python. I used it at Intel to build a high-performance API for running machine learning analysis jobs.",
+        },
       ],
     },
     {
@@ -75,13 +87,42 @@ export default function Skills() {
           name: "C#",
           image: "/skills/c-sharp.png",
           description:
-            "Microsoft’s object-oriented language I used for Unity game development and an Intel desktop application.",
+            "Microsoft's object-oriented language I used for Unity game development and an Intel desktop application.",
         },
         {
           name: "SQL",
           image: "/skills/sql.png",
           description:
             "A language for managing and querying databases. I studied it formally in several database courses and use it very frequently in my work as an owner of several relational databases.",
+        },
+      ],
+    },
+    {
+      title: "Data Technologies",
+      content: [
+        {
+          name: "Kafka",
+          image: "/skills/kafka.png",
+          description:
+            "A distributed event streaming platform. I used it in a graduate school project as the foundation of a data pipeline to stream taxi trip data into Neo4j.",
+        },
+        {
+          name: "Spark",
+          image: "/skills/spark.png",
+          description:
+            "A distributed data processing engine. I used it in a graduate school project to build a data pipeline for batch processing of large-scale datasets stored in Hadoop.",
+        },
+        {
+          name: "Hadoop",
+          image: "/skills/hadoop.svg",
+          description:
+            "A framework for distributed storage and processing. I used it in a graduate school project to implement MapReduce algorithms for processing large distributed datasets.",
+        },
+        {
+          name: "Neo4j",
+          image: "/skills/neo4j.png",
+          description:
+            "A graph database management system. I used it in a graduate school project to model taxi trip data and apply the PageRank algorithm to identify high-traffic routes.",
         },
       ],
     },
@@ -97,7 +138,7 @@ export default function Skills() {
       </div>
 
       {skills.map((section) => (
-        <>
+        <div key={section.title}>
           <div className="text-2xl md:text-3xl font-semibold mt-20">
             {section.title}
           </div>
@@ -105,7 +146,7 @@ export default function Skills() {
             {section.content.map((skill) => (
               <Card
                 key={skill.name}
-                className="p-5 border-neutral-400 dark:border-neutral-600 gap-3"
+                className="p-5 border-neutral-400 dark:border-neutral-800 gap-3 bg-neutral-50/40 dark:bg-neutral-950/40"
               >
                 <div className="flex">
                   <div className="flex-shrink-0 w-[50px] h-[50px] md:w-[60px] md:h-[60px] lg:w-[70px] lg:h-[70px] flex items-center justify-center">
@@ -115,7 +156,7 @@ export default function Skills() {
                       width={70}
                       height={70}
                       className="object-contain w-[40px] h-[40px] md:w-[50px] md:h-[50px] lg:w-[60px] lg:h-[60px] max-h-full"
-                    ></Image>
+                    />
                   </div>
                   <div className="pl-3 flex flex-col justify-center">
                     <div className="text-2xl md:text-3xl font-semibold">
@@ -129,7 +170,7 @@ export default function Skills() {
               </Card>
             ))}
           </div>
-        </>
+        </div>
       ))}
     </div>
   );
