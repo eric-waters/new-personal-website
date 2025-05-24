@@ -201,7 +201,7 @@ export default function Experience() {
   };
 
   return (
-    <div className="px-5 md:px-20 lg:px-40 mt-12 mb-24 lg:mt-20">
+    <div className="mt-12 mb-24 lg:mt-20">
       <motion.div
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}

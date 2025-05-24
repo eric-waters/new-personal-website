@@ -40,7 +40,7 @@ export default function RootLayout({
             <div className="fixed inset-0 -z-10">
               <BackgroundGradientAnimation interactive={false} size="100%" />
             </div>
-            <div className="relative z-10 container mx-auto">
+            <div className="relative z-10 container px-5 md:px-20 xl:px-28 mx-auto">
               <Navbar />
               {children}
             </div>

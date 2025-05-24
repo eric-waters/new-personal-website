@@ -32,10 +32,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
   const opacityTransform = useTransform(scrollYProgress, [0, 0.1], [0, 1]);
 
   return (
-    <div
-      className="w-full font-sans px-5 md:px-20 lg:px-40 mt-12 mb-24 lg:mt-20"
-      ref={containerRef}
-    >
+    <div className="w-full font-sans mt-12 mb-24 lg:mt-20" ref={containerRef}>
       <motion.div
         initial={{ opacity: 0, x: -50 }}
         animate={{ opacity: 1, x: 0 }}

@@ -129,7 +129,7 @@ export default function Skills() {
   ];
 
   return (
-    <div className="px-5 md:px-20 lg:px-40 mt-12 mb-24 lg:mt-20">
+    <div className="mt-12 mb-24 lg:mt-20">
       <div className="text-4xl md:text-6xl font-bold">
         A Powerful Toolbox 🔨
       </div>
