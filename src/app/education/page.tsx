@@ -208,10 +208,11 @@ export default function Experience() {
         transition={{ duration: 1 }}
       >
         <div className="text-4xl md:text-6xl font-bold">
-          An Academic Weapon 📚
+          Academic Excellence 📚
         </div>
         <div className="text-lg text-neutral-600 dark:text-neutral-400 mt-5">
-          4 years, 2 degrees, and a 4.0 GPA all the way.
+          M.S. and B.S. in Computer Science. Perfect grades. Relentless
+          curiosity.
         </div>
       </motion.div>
 
@@ -235,7 +236,7 @@ export default function Experience() {
             alt="Bachelors Diploma"
             width={3300}
             height={2550}
-            className="h-auto border-3 dark:border-2 border-neutral-600 dark:border-neutral-700 rounded p-4"
+            className="h-auto rounded border-3 border-neutral-600 dark:border-neutral-900"
             priority={true}
           ></Image>
         </motion.div>
@@ -258,7 +259,7 @@ export default function Experience() {
             alt="Bachelors Diploma"
             width={3300}
             height={2550}
-            className="h-auto border-3 dark:border-2 border-neutral-600 dark:border-neutral-700 rounded p-4"
+            className="h-auto rounded border-3 border-neutral-600 dark:border-neutral-900"
             priority={true}
           ></Image>
         </motion.div>

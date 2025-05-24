@@ -43,7 +43,7 @@ export default function Navbar() {
         Eric Waters
       </Link>
       <div className="flex">
-        <NavigationMenu className="hidden md:flex">
+        <NavigationMenu className="hidden lg:flex">
           <NavigationMenuList>
             {menuItems.map((item) => (
               <NavigationMenuItem key={item.name}>
@@ -59,8 +59,12 @@ export default function Navbar() {
           </NavigationMenuList>
         </NavigationMenu>
         <Drawer>
-          <DrawerTrigger asChild className="md:hidden">
-            <Button variant="outline" size="icon" className="cursor-pointer">
+          <DrawerTrigger asChild className="lg:hidden">
+            <Button
+              variant="outline"
+              size="icon"
+              className="cursor-pointer bg-neutral-50/50 dark:bg-neutral-950/50"
+            >
               <IconMenu2></IconMenu2>
             </Button>
           </DrawerTrigger>

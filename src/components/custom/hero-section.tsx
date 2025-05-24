@@ -147,6 +147,7 @@ export default function HeroSection() {
                   width={1125}
                   height={1125}
                   className="aspect-square max-w-xs rounded-full border bg-neutral-50/50 border-neutral-400/50 dark:bg-neutral-950/40 dark:border-neutral-800"
+                  priority
                 />
               </div>
             </motion.div>
