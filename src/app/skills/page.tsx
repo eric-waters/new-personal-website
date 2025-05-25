@@ -1,4 +1,5 @@
 "use client";
+
 import { Card } from "@/components/ui/card";
 import { motion } from "motion/react";
 import Image from "next/image";
@@ -115,7 +116,7 @@ export default function Skills() {
             "A powerful Python library for data manipulation and analysis. I used it extensively in graduate school and at Intel for data cleaning, transformation, and analysis tasks.",
         },
         {
-          name: "Numpy",
+          name: "NumPy",
           image: "/skills/numpy.svg",
           description:
             "A fundamental package for scientific computing with Python. I used it in graduate school for numerical computations and data manipulation, especially in conjunction with Pandas.",
@@ -178,7 +179,7 @@ export default function Skills() {
           name: "TensorFlow",
           image: "/skills/tensorflow.png",
           description:
-            "I used TensorFlow extensively in graduate school for machine learning tasks, especially image classification, and leveraged TensorFlow Lite to deploy models on mobile devices.",
+            "A platform for building and deploying ML models. I used it extensively in graduate school for various ML tasks and leveraged TensorFlow Lite to deploy models on mobile devices.",
         },
         {
           name: "Scikit-learn",
@@ -237,21 +238,21 @@ export default function Skills() {
     },
   ];
 
-  function calculateCardDelay(sectionIndex: number, cardIndex: number): number {
-    const sectionLengths = skills.map((section) => section.content.length);
-    const totalCardsBefore = sectionLengths
-      .slice(0, sectionIndex)
-      .reduce((acc, length) => acc + length, 0);
-    return 0.3 + (totalCardsBefore + cardIndex) * 0.1;
-  }
+  // function calculateCardDelay(sectionIndex: number, cardIndex: number): number {
+  //   const sectionLengths = skills.map((section) => section.content.length);
+  //   const totalCardsBefore = sectionLengths
+  //     .slice(0, sectionIndex)
+  //     .reduce((acc, length) => acc + length, 0);
+  //   return 0.3 + (totalCardsBefore + cardIndex) * 0.1;
+  // }
 
-  function calcualateHeadingDelay(sectionIndex: number): number {
-    const sectionLengths = skills.map((section) => section.content.length);
-    const totalCardsBefore = sectionLengths
-      .slice(0, sectionIndex)
-      .reduce((acc, length) => acc + length, 0);
-    return 0.3 + totalCardsBefore * 0.1;
-  }
+  // function calcualateHeadingDelay(sectionIndex: number): number {
+  //   const sectionLengths = skills.map((section) => section.content.length);
+  //   const totalCardsBefore = sectionLengths
+  //     .slice(0, sectionIndex)
+  //     .reduce((acc, length) => acc + length, 0);
+  //   return 0.3 + totalCardsBefore * 0.1;
+  // }
 
   return (
     <div className="mt-12 mb-24 lg:mt-20">
@@ -282,15 +283,16 @@ export default function Skills() {
           <motion.div
             initial={{
               opacity: 0,
-              y: 50,
+              y: 100,
             }}
-            animate={{
+            whileInView={{
               y: 0,
               opacity: 1,
             }}
+            viewport={{ once: true, amount: 0.2 }}
             transition={{
               duration: 0.6,
-              delay: calcualateHeadingDelay(sectionIndex),
+              delay: 0,
             }}
           >
             <div className="text-2xl md:text-3xl font-semibold mt-20">
@@ -305,18 +307,19 @@ export default function Skills() {
                 className="h-full flex"
                 initial={{
                   opacity: 0,
-                  y: 50,
+                  y: 100,
                 }}
-                animate={{
+                whileInView={{
                   y: 0,
                   opacity: 1,
                 }}
+                viewport={{ once: true, amount: 0.2 }}
                 transition={{
                   duration: 0.6,
-                  delay: calculateCardDelay(sectionIndex, cardIndex),
+                  delay: 0,
                 }}
               >
-                <Card className="p-5 border-neutral-400 dark:border-neutral-800 gap-3 bg-neutral-50/40 dark:bg-neutral-950/40">
+                <Card className="p-5 border-neutral-400 dark:border-neutral-800 gap-3 bg-neutral-50/20 dark:bg-neutral-950/40">
                   <div className="flex">
                     <div className="flex-shrink-0 w-[50px] h-[50px] md:w-[60px] md:h-[60px] lg:w-[70px] lg:h-[70px] flex items-center justify-center">
                       <Image
