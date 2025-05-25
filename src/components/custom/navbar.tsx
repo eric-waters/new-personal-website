@@ -46,24 +46,19 @@ export default function Navbar() {
           <NavigationMenuList>
             {menuItems.map((item) => (
               <NavigationMenuItem key={item.name}>
-                <Link href={item.href} legacyBehavior passHref>
-                  <NavigationMenuLink
-                    className={navigationMenuTriggerStyle() + " bg-transparent"}
-                  >
-                    {item.name}
-                  </NavigationMenuLink>
-                </Link>
+                <NavigationMenuLink
+                  asChild
+                  className={navigationMenuTriggerStyle() + " bg-transparent"}
+                >
+                  <Link href={item.href}>{item.name}</Link>
+                </NavigationMenuLink>
               </NavigationMenuItem>
             ))}
           </NavigationMenuList>
         </NavigationMenu>
         <Drawer>
           <DrawerTrigger asChild className="lg:hidden">
-            <Button
-              variant="outline"
-              size="icon"
-              className="cursor-pointer bg-neutral-50/50 dark:bg-neutral-950/50"
-            >
+            <Button variant="outline" size="icon" className="cursor-pointer">
               <IconMenu2></IconMenu2>
             </Button>
           </DrawerTrigger>
@@ -82,7 +77,7 @@ export default function Navbar() {
             </DrawerHeader>
           </DrawerContent>
         </Drawer>
-        <div className="pl-3">
+        <div className="pl-5">
           <ModeToggle />
         </div>
       </div>

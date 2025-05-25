@@ -56,11 +56,11 @@ const testimonials = [
 export default function HeroSection() {
   return (
     <>
-      <div className="my-1 md:my-10 py-10 flex w-full flex-col items-center justify-center">
+      <div className="relative my-1 md:my-10 py-10 flex w-full flex-col items-center justify-center">
         <div className="py-10 w-full">
           <div className="flex justify-between">
             <div className="my-auto">
-              <h1 className="z-10 max-w-4xl text-5xl font-bold lg:text-7xl text-center lg:text-left">
+              <h1 className="relative z-10 max-w-4xl text-5xl font-bold lg:text-7xl text-center lg:text-left">
                 {"Hi, I'm Eric 👋".split(" ").map((word, index) => (
                   <motion.span
                     key={index}
