@@ -11,11 +11,11 @@ export default function Experience() {
       content: (
         <div>
           <div className="text-3xl">Intel Corporation</div>
-          <div className="text-xl text-neutral-700 dark:text-neutral-300">
+          <div className="text-xl text-neutral-800 dark:text-neutral-200">
             Software Application Development Engineer
           </div>
           <div className="my-8">
-            <div className="flex items-start gap-2 text-sm text-neutral-700 md:text-base dark:text-neutral-300">
+            <div className="flex items-start gap-2 text-sm text-neutral-800 md:text-base dark:text-neutral-200">
               <div>✅</div>
               <div>
                 Developed a scalable <strong>internal web platform</strong> for
@@ -27,7 +27,7 @@ export default function Experience() {
                 integrations.
               </div>
             </div>
-            <div className="flex items-start gap-2 text-sm text-neutral-700 md:text-base dark:text-neutral-300">
+            <div className="flex items-start gap-2 text-sm text-neutral-800 md:text-base dark:text-neutral-200">
               <div>✅</div>
               <div>
                 Built and deployed a scalable <strong>Python API</strong> using{" "}
@@ -38,7 +38,7 @@ export default function Experience() {
                 across internal applications.
               </div>
             </div>
-            <div className="flex items-start gap-2 text-sm text-neutral-700 md:text-base dark:text-neutral-300">
+            <div className="flex items-start gap-2 text-sm text-neutral-800 md:text-base dark:text-neutral-200">
               <div>✅</div>
               <div>
                 Soley owned and administrated a company-wide{" "}
@@ -76,11 +76,11 @@ export default function Experience() {
       content: (
         <div>
           <div className="text-3xl">Dell Technologies</div>
-          <div className="text-xl text-neutral-700 dark:text-neutral-300">
+          <div className="text-xl text-neutral-800 dark:text-neutral-200">
             Graduate Software Engineering Intern
           </div>
           <div className="my-8">
-            <div className="flex items-start gap-2 text-sm text-neutral-700 md:text-base dark:text-neutral-300">
+            <div className="flex items-start gap-2 text-sm text-neutral-800 md:text-base dark:text-neutral-200">
               <div>✅</div>
               <div>
                 Improved user experience of several applications by{" "}
@@ -89,7 +89,7 @@ export default function Experience() {
                 <strong>OAuth</strong> and <strong>VMware Tanzu</strong>.
               </div>
             </div>
-            <div className="flex items-start gap-2 text-sm text-neutral-700 md:text-base dark:text-neutral-300">
+            <div className="flex items-start gap-2 text-sm text-neutral-800 md:text-base dark:text-neutral-200">
               <div>✅</div>
               <div>
                 <strong>Safeguarded sensitive data</strong> and ensured
@@ -126,11 +126,11 @@ export default function Experience() {
       content: (
         <div>
           <div className="text-3xl">Dell Technologies</div>
-          <div className="text-xl text-neutral-700 dark:text-neutral-300">
+          <div className="text-xl text-neutral-800 dark:text-neutral-200">
             Undergraduate Software Engineering Intern
           </div>
           <div className="my-8">
-            <div className="flex items-start gap-2 text-sm text-neutral-700 md:text-base dark:text-neutral-300">
+            <div className="flex items-start gap-2 text-sm text-neutral-800 md:text-base dark:text-neutral-200">
               <div>✅</div>
               <div>
                 Developed a{" "}
@@ -141,7 +141,7 @@ export default function Experience() {
                 Agile teams.
               </div>
             </div>
-            <div className="flex items-start gap-2 text-sm text-neutral-700 md:text-base dark:text-neutral-300">
+            <div className="flex items-start gap-2 text-sm text-neutral-800 md:text-base dark:text-neutral-200">
               <div>✅</div>
               <div>
                 <strong>Streamlined the onboarding process</strong> for Employee

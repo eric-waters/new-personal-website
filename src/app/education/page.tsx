@@ -56,16 +56,16 @@ export default function Experience() {
         <div className="text-2xl font-bold">
           Computer Science (Big Data Systems), M.S.
         </div>
-        <div className="text-xl text-neutral-600 dark:text-neutral-400 mt-2">
+        <div className="text-xl text-neutral-800 dark:text-neutral-300 mt-2">
           Arizona State University, Tempe AZ
         </div>
-        <div className="text-lg text-neutral-500 dark:text-neutral-500 mt-1">
+        <div className="text-lg text-neutral-600 dark:text-neutral-400 mt-1">
           2022 - 2023
         </div>
-        <div className="mt-10 text-xl font-bold dark:text-neutral-300">
+        <div className="mt-10 text-xl font-bold dark:text-neutral-200">
           Key Coursework
         </div>
-        <div className="md:text-lg text-neutral-700 dark:text-neutral-400 mt-1">
+        <div className="md:text-lg text-neutral-800 dark:text-neutral-300 mt-1">
           <ul className="list-disc list-inside">
             <li>Data Processing at Scale</li>
             <li>Data Mining</li>
@@ -113,16 +113,16 @@ export default function Experience() {
     textData: (
       <>
         <div className="text-2xl font-bold">Computer Science, B.S.</div>
-        <div className="text-xl text-neutral-600 dark:text-neutral-400 mt-2">
+        <div className="text-xl text-neutral-800 dark:text-neutral-300 mt-2">
           Arizona State University, Tempe AZ
         </div>
-        <div className="text-lg text-neutral-500 dark:text-neutral-500 mt-1">
+        <div className="text-lg text-neutral-600 dark:text-neutral-400 mt-1">
           2019 - 2022
         </div>
-        <div className="mt-10 text-xl font-bold dark:text-neutral-300">
+        <div className="mt-10 text-xl font-bold dark:text-neutral-200">
           Key Coursework
         </div>
-        <div className="md:text-lg text-neutral-700 dark:text-neutral-400 mt-1">
+        <div className="md:text-lg text-neutral-800 dark:text-neutral-300 mt-1">
           <ul className="list-disc list-inside">
             <li>Programming Languages</li>
             <li>Object-Oriented Programming & Data Structures</li>
@@ -209,9 +209,9 @@ export default function Experience() {
         transition={{ duration: 1 }}
       >
         <div className="text-4xl md:text-6xl font-bold">
-          Academic Excellence 📚
+          Academic Excellence{"\u00A0"}📚
         </div>
-        <div className="text-lg text-neutral-600 dark:text-neutral-400 mt-5">
+        <div className="text-lg text-neutral-800 dark:text-neutral-300 mt-5">
           M.S. and B.S. in Computer Science. Perfect grades. Relentless
           curiosity.
         </div>

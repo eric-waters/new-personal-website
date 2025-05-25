@@ -88,12 +88,10 @@ export default function HeroSection() {
                   duration: 0.3,
                   delay: 0.8,
                 }}
-                className="z-10 max-w-2xl md:px-0 lg:pr-4 py-4 text-base lg:text-lg font-normal text-neutral-800 dark:text-neutral-200 text-center lg:text-left"
+                className="z-10 max-w-2xl md:px-0 lg:pr-4 py-4 text-base lg:text-lg font-normal text-neutral-900 dark:text-neutral-200 text-center lg:text-left"
               >
-                I'm a software engineer with a proven track record of writing
-                quality software solutions. Passionate about building scalable,
-                user-friendly applications and continuously learning new
-                technologies to improve my craft.
+                I build powerful backend systems and intuitive interfaces —
+                always with clean, optimized code and a focus on impact.
               </motion.p>
               <motion.div
                 initial={{

@@ -238,22 +238,6 @@ export default function Skills() {
     },
   ];
 
-  // function calculateCardDelay(sectionIndex: number, cardIndex: number): number {
-  //   const sectionLengths = skills.map((section) => section.content.length);
-  //   const totalCardsBefore = sectionLengths
-  //     .slice(0, sectionIndex)
-  //     .reduce((acc, length) => acc + length, 0);
-  //   return 0.3 + (totalCardsBefore + cardIndex) * 0.1;
-  // }
-
-  // function calcualateHeadingDelay(sectionIndex: number): number {
-  //   const sectionLengths = skills.map((section) => section.content.length);
-  //   const totalCardsBefore = sectionLengths
-  //     .slice(0, sectionIndex)
-  //     .reduce((acc, length) => acc + length, 0);
-  //   return 0.3 + totalCardsBefore * 0.1;
-  // }
-
   return (
     <div className="mt-12 mb-24 lg:mt-20">
       <motion.div
@@ -271,9 +255,9 @@ export default function Skills() {
         }}
       >
         <div className="text-4xl md:text-6xl font-bold">
-          A Powerful Toolbox 🔨
+          A Powerful Toolbox{"\u00A0"}🔨
         </div>
-        <div className="text-lg text-neutral-600 dark:text-neutral-400 mt-5">
+        <div className="text-lg text-neutral-800 dark:text-neutral-300 mt-5">
           Skills I've aquried over the years. Always adding new ones.
         </div>
       </motion.div>
