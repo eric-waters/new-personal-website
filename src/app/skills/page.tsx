@@ -87,16 +87,22 @@ export default function Skills() {
             "A PHP framework for building web applications. I used it for a year-long capstone project where I built a full-stack contractor management system.",
         },
         {
-          name: "OAuth 2.0",
-          image: "/skills/oauth.png",
-          description:
-            "An open standard for access delegation. I've used it in multiple projects to implement secure authentication and authorization flows.",
-        },
-        {
           name: "FastAPI",
           image: "/skills/fastapi.svg",
           description:
             "A modern web framework for building APIs with Python. I used it at Intel to build a high-performance API for running machine learning analysis jobs.",
+        },
+        {
+          name: "Sanic",
+          image: "/skills/sanic.png",
+          description:
+            "A Python web framework optimized for speed and asynchronous APIs. At Intel, I used Sanic to build scalable, low-latency endpoints for serving generative AI models in production.",
+        },
+        {
+          name: "OAuth 2.0",
+          image: "/skills/oauth.png",
+          description:
+            "An open standard for access delegation. I've used it in multiple projects to implement secure authentication and authorization flows.",
         },
         {
           name: "D3.js",

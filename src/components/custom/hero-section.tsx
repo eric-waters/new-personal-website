@@ -13,7 +13,7 @@ const testimonials = [
     position: "Software Application Development Engineer",
     date: "August 2023 - Present",
     description:
-      "Created a drag-and-drop generative AI tool studio, redesigned an entire generative AI web platform, created an API to serve advanced ML analytics, and owned an internal search engine.",
+      "Created a drag-and-drop generative AI tool studio, redesigned an entire generative AI web platform, created an API to serve advanced ML analytics, and owned a search engine for manufacturing data.",
   },
   {
     name: "ASU",
@@ -40,7 +40,7 @@ const testimonials = [
     position: "Computer Science, B.S.",
     date: "August 2019 - May 2022",
     description:
-      "Studied Data Structures and Algorithms, Programming Languages, Operating Systems, Software Engineering, Database Management Systems, QA & Testing, and a bunch of math.",
+      "Studied Data Structures and Algorithms, Programming Languages, Operating Systems, Software Engineering, Database Management Systems, QA & Testing, and various mathematics.",
   },
   {
     name: "Dell",
@@ -49,7 +49,7 @@ const testimonials = [
     position: "Undergraduate Software Engineering Intern",
     date: "May 2021 - August 2021",
     description:
-      "Enhanced the efficiency of agile teams by creating a proprietary kanban board application using Spring MVC. Won the intern hackathon for streamlining the Employee Resource Group onboarding process.",
+      "Enhanced the efficiency of agile teams by creating a proprietary kanban board application using Spring. Won the intern hackathon for streamlining the Employee Resource Group onboarding process.",
   },
 ];
 
