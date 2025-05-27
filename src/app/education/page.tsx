@@ -53,16 +53,41 @@ export default function Experience() {
   const mastersContent = {
     textData: (
       <>
-        <div className="text-2xl font-bold">
-          Computer Science (Big Data Systems), M.S.
+        <div className="flex gap-4 items-center mb-8">
+          <Image
+            src="/pitchfork.png"
+            alt="ASU logo"
+            width={1085}
+            height={2160}
+            className="h-34 w-auto"
+          ></Image>
+          <div>
+            <div className="text-2xl font-bold">
+              Computer Science (Big Data Systems), M.S.
+            </div>
+            <div className="text-lg text-neutral-800 dark:text-neutral-300">
+              Arizona State University, Tempe AZ
+            </div>
+            <div className="text-base text-neutral-600 dark:text-neutral-400">
+              2022 - 2023
+            </div>
+            <div className="text-base text-neutral-600 dark:text-neutral-400">
+              4.0 GPA
+            </div>
+          </div>
         </div>
-        <div className="text-xl text-neutral-800 dark:text-neutral-300 mt-2">
-          Arizona State University, Tempe AZ
+        <div className="mt-5 text-xl font-bold dark:text-neutral-200">
+          Overview
         </div>
-        <div className="text-lg text-neutral-600 dark:text-neutral-400 mt-1">
-          2022 - 2023
+        <div className="md:text-lg text-neutral-800 dark:text-neutral-300 mt-1">
+          Focused on designing and deploying scalable systems for processing and
+          analyzing large-scale, complex datasets. Gained hands-on experience
+          with distributed computing, real-time data processing, data mining,
+          machine learning, and visualization through project-based
+          learning—equipping me to develop efficient, data-driven solutions
+          across various domains.
         </div>
-        <div className="mt-10 text-xl font-bold dark:text-neutral-200">
+        <div className="mt-5 text-xl font-bold dark:text-neutral-200">
           Key Coursework
         </div>
         <div className="md:text-lg text-neutral-800 dark:text-neutral-300 mt-1">
@@ -112,14 +137,39 @@ export default function Experience() {
   const bachelorsContent = {
     textData: (
       <>
-        <div className="text-2xl font-bold">Computer Science, B.S.</div>
-        <div className="text-xl text-neutral-800 dark:text-neutral-300 mt-2">
-          Arizona State University, Tempe AZ
+        <div className="flex gap-4 items-center mb-8">
+          <Image
+            src="/pitchfork.png"
+            alt="ASU logo"
+            width={1085}
+            height={2160}
+            className="h-34 w-auto"
+          ></Image>
+          <div>
+            <div className="text-2xl font-bold">Computer Science, B.S.</div>
+            <div className="text-lg text-neutral-800 dark:text-neutral-300">
+              Arizona State University, Tempe AZ
+            </div>
+            <div className="text-base text-neutral-600 dark:text-neutral-400">
+              2019 - 2022
+            </div>
+            <div className="text-base text-neutral-600 dark:text-neutral-400">
+              4.0 GPA
+            </div>
+          </div>
         </div>
-        <div className="text-lg text-neutral-600 dark:text-neutral-400 mt-1">
-          2019 - 2022
+        <div className="mt-5 text-xl font-bold dark:text-neutral-200">
+          Overview
         </div>
-        <div className="mt-10 text-xl font-bold dark:text-neutral-200">
+        <div className="md:text-lg text-neutral-800 dark:text-neutral-300 mt-1">
+          Studied the design, development, and analysis of software systems,
+          building a strong foundation in programming, data structures,
+          algorithms, and computer systems. Gained hands-on experience in
+          machine learning, cybersecurity, and software engineering, developing
+          the skills to solve complex technical problems and build robust,
+          scalable applications.
+        </div>
+        <div className="mt-5 text-xl font-bold dark:text-neutral-200">
           Key Coursework
         </div>
         <div className="md:text-lg text-neutral-800 dark:text-neutral-300 mt-1">
@@ -133,9 +183,7 @@ export default function Experience() {
             <li>Operating Systems</li>
             <li>Information Assurance</li>
             <li>Software QA & Testing</li>
-            <li>Logic in Computer Science</li>
             <li>Probability & Statistics Engineering Problem Solving</li>
-            <li>Computer Organization & Assembly Language Programming</li>
             <li>Theoretical Computer Science</li>
           </ul>
         </div>
@@ -212,12 +260,11 @@ export default function Experience() {
           Academic Excellence{"\u00A0"}📚
         </div>
         <div className="text-lg text-neutral-800 dark:text-neutral-300 mt-5">
-          M.S. and B.S. in Computer Science. Perfect grades. Relentless
-          curiosity.
+          Pursuing knowledge with purpose and precision.
         </div>
       </motion.div>
 
-      <div className="mt-8 md:mt-12 grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-20">
+      {/* <div className="mt-8 md:mt-12 grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-20">
         <motion.div
           initial={{
             opacity: 0,
@@ -264,32 +311,31 @@ export default function Experience() {
             priority={true}
           ></Image>
         </motion.div>
-      </div>
+      </div> */}
 
-      <motion.div
-        initial={{
-          opacity: 0,
-          y: -50,
-        }}
-        animate={{
-          opacity: 1,
-          y: 0,
-        }}
-        transition={{
-          duration: 1,
-          delay: 0.8,
-        }}
-        className="my-20"
-      >
-        {[mastersContent, bachelorsContent].map((content, index) => (
-          <div className="grid grid-cols-12 my-20" key={index}>
-            <div className="col-span-12 xl:col-span-7">{content.textData}</div>
-            <div className="col-span-12 xl:col-span-5 mt-10 xl:mt-0">
-              {content.carousel}
-            </div>
+      {[mastersContent, bachelorsContent].map((content, index) => (
+        <motion.div
+          key={index}
+          initial={{
+            opacity: 0,
+            y: -50,
+          }}
+          animate={{
+            opacity: 1,
+            y: 0,
+          }}
+          transition={{
+            duration: 1,
+            delay: 0.2 + index * 0.2,
+          }}
+          className="my-20"
+        >
+          <div className="grid lg:grid-cols-2 gap-5 lg:gap-20 my-20">
+            <div className="">{content.textData}</div>
+            <div className="">{content.carousel}</div>
           </div>
-        ))}
-      </motion.div>
+        </motion.div>
+      ))}
     </div>
   );
 }

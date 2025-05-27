@@ -37,9 +37,9 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <div className="relative min-h-screen">
-            <div className="fixed inset-0 -z-10">
+            {/* <div className="fixed inset-0 -z-10">
               <BackgroundGradientAnimation interactive={false} size="100%" />
-            </div>
+            </div> */}
             <div className="relative z-10 container px-5 md:px-20 xl:px-28 mx-auto">
               <Navbar />
               {children}

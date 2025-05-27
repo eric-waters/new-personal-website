@@ -66,7 +66,7 @@ export default function Skills() {
           name: "Tailwind CSS",
           image: "/skills/tailwind.png",
           description:
-            "A utility-first CSS framework for rapidly building custom user interfaces. I use it in most of my web projects, including this website. It drastically improve my productivity and design consistency.",
+            "A utility-first CSS framework for rapidly building custom user interfaces. I use it in most of my web projects, including this website. It drastically improves my productivity and design consistency.",
         },
         {
           name: "Next.js",
@@ -264,7 +264,8 @@ export default function Skills() {
           A Powerful Toolbox{"\u00A0"}🔨
         </div>
         <div className="text-lg text-neutral-800 dark:text-neutral-300 mt-5">
-          Skills I've aquried over the years. Always adding new ones.
+          A well-rounded set of technical skills, continuously sharpened to keep
+          pace with evolving technologies.
         </div>
       </motion.div>
 
@@ -309,7 +310,7 @@ export default function Skills() {
                   delay: 0,
                 }}
               >
-                <Card className="p-5 border-neutral-400 dark:border-neutral-800 gap-3 bg-neutral-50/20 dark:bg-neutral-950/40">
+                <Card className="p-5 border-neutral-400 dark:border-neutral-800 gap-3 bg-white/50 dark:bg-neutral-950/50">
                   <div className="flex">
                     <div className="flex-shrink-0 w-[50px] h-[50px] md:w-[60px] md:h-[60px] lg:w-[70px] lg:h-[70px] flex items-center justify-center">
                       <Image

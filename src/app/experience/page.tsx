@@ -18,44 +18,49 @@ export default function Experience() {
             <div className="flex items-start gap-2 text-sm text-neutral-800 md:text-base dark:text-neutral-200">
               <div>✅</div>
               <div>
-                Developed a{" "}
-                <strong>modular web platform for Generative AI tools</strong>{" "}
-                using <strong>Angular</strong> and <strong>Sanic</strong>,
-                empowering teams to rapidly build AI-powered apps with reusable
-                components, a unified UI, and robust API integrations.
+                <strong>Developed an AI-powered contract auditing tool</strong>{" "}
+                that enabled enterprise legal teams to identify risks and
+                inefficiencies, resulting in up to{" "}
+                <strong>$30M in estimated cost savings</strong>.
               </div>
             </div>
             <div className="flex items-start gap-2 text-sm text-neutral-800 md:text-base dark:text-neutral-200">
               <div>✅</div>
               <div>
-                Designed a drag-and-drop{" "}
-                <strong>Generative AI tool studio </strong>
-                using <strong>React</strong>, <strong>Next.js</strong>, and{" "}
-                <strong>Tailwind</strong>, enabling teams to rapidly create and
-                deploy AI-powered apps without any code.
+                <strong>
+                  Built a modular web platform for Generative AI tools{" "}
+                </strong>{" "}
+                using Angular and Sanic, enabling rapid development of
+                AI-powered apps with reusable components, unified UI, and robust
+                API integrations.
               </div>
             </div>
             <div className="flex items-start gap-2 text-sm text-neutral-800 md:text-base dark:text-neutral-200">
               <div>✅</div>
               <div>
-                Designed and deployed a scalable{" "}
-                <strong>API for machine learning analytics</strong> of
-                manufacturing data using <strong>FastAPI</strong>,{" "}
-                <strong>Docker</strong>, and <strong>Kubernetes</strong>,
-                enabling multiple teams to seamlessly integrate advanced ML
-                capabilities into their applications.
+                <strong>Designed a no-code AI app studio </strong> using React,
+                Next.js, and Tailwind, empowering teams to create and deploy AI
+                apps without using development resources.
               </div>
             </div>
             <div className="flex items-start gap-2 text-sm text-neutral-800 md:text-base dark:text-neutral-200">
               <div>✅</div>
               <div>
-                Solely owned and administered a{" "}
-                <strong>cognitive search platform</strong> for manufacturing
-                data—developed robust <strong>ETL pipelines</strong> with{" "}
-                <strong>Pandas</strong> and <strong>SQL Server</strong> to
-                ingest and normalize enterprise data, and collaborated across
-                business units to identify, map, and integrate diverse data
-                sources.
+                <strong>Engineered a scalable ML analytics API </strong> for
+                manufacturing data using FastAPI, Docker, and Kubernetes,
+                enabling seamless integration of advanced analytics into
+                multiple applications.
+              </div>
+            </div>
+            <div className="flex items-start gap-2 text-sm text-neutral-800 md:text-base dark:text-neutral-200">
+              <div>✅</div>
+              <div>
+                <strong>Independently owned an AI search platform</strong> for
+                manufacturing data, delivering up to{" "}
+                <strong>$5M in estimated ROI</strong> through faster
+                problem-solving. Created robust ETL pipelines using Pandas and
+                SQL Server to ingest, normalize, and consolidate data across
+                business units.{" "}
               </div>
             </div>
           </div>
@@ -92,21 +97,17 @@ export default function Experience() {
             <div className="flex items-start gap-2 text-sm text-neutral-800 md:text-base dark:text-neutral-200">
               <div>✅</div>
               <div>
-                Enhanced user experience across multiple applications by{" "}
-                <strong>reducing login time by 400%</strong> through
-                implementing "Sign in with Dell" (SSO) using{" "}
-                <strong>OAuth 2.0</strong>, streamlining authentication and
-                boosting productivity.
+                <strong>Implemented OAuth 2.0 SSO </strong>
+                across several enterprise apps, unifying authentication and
+                enhancing user experience.
               </div>
             </div>
             <div className="flex items-start gap-2 text-sm text-neutral-800 md:text-base dark:text-neutral-200">
               <div>✅</div>
               <div>
-                <strong>Safeguarded sensitive data</strong> and ensured
-                regulatory compliance by implementing fine-grained authorization
-                controls in multiple <strong>REST APIs</strong> using{" "}
-                <strong>Spring Boot</strong>,<strong> Angular</strong>, and{" "}
-                <strong>Oracle Database</strong>.
+                <strong>Integrated fine-grained authorization controls </strong>
+                for several web apps and REST APIs using Spring Boot and
+                Angular, strengthening security and compliance.
               </div>
             </div>
           </div>
@@ -142,20 +143,17 @@ export default function Experience() {
             <div className="flex items-start gap-2 text-sm text-neutral-800 md:text-base dark:text-neutral-200">
               <div>✅</div>
               <div>
-                Developed a{" "}
-                <strong>proprietary Kanban Board application</strong> using{" "}
-                <strong>Spring</strong> and <strong>MySQL</strong>,{" "}
-                significantly improving task tracking and collaboration for
-                Agile teams.
+                <strong>Built a custom Kanban board app</strong> with Spring and
+                MySQL, improving agile collaboration and task tracking for
+                engineering teams.
               </div>
             </div>
             <div className="flex items-start gap-2 text-sm text-neutral-800 md:text-base dark:text-neutral-200">
               <div>✅</div>
               <div>
-                <strong>Streamlined the onboarding process</strong> for Employee
-                Resource Groups, earning{" "}
-                <strong>1st place in the Dell Intern Hackathon</strong> for
-                delivering a high-impact, user-centric solution.
+                <strong>Streamlined the onboarding process</strong> for an
+                employee resource group, winning 1st place in the Dell Intern
+                Hackathon.
               </div>
             </div>
           </div>
