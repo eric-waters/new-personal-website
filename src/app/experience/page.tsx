@@ -3,6 +3,7 @@
 import React from "react";
 import { Timeline } from "@/components/ui/timeline";
 import Image from "next/image";
+import { Check } from "lucide-react";
 
 export default function Experience() {
   const data = [
@@ -16,7 +17,9 @@ export default function Experience() {
           </div>
           <div className="my-8">
             <div className="flex items-start gap-2 text-sm text-neutral-800 md:text-base dark:text-neutral-200">
-              <div>✅</div>
+              <div>
+                <Check className="text-blue-500" />
+              </div>
               <div>
                 <strong>Developed an AI-powered contract auditing tool</strong>{" "}
                 that enabled enterprise legal teams to identify risks and
@@ -25,7 +28,9 @@ export default function Experience() {
               </div>
             </div>
             <div className="flex items-start gap-2 text-sm text-neutral-800 md:text-base dark:text-neutral-200">
-              <div>✅</div>
+              <div>
+                <Check className="text-blue-500" />
+              </div>
               <div>
                 <strong>
                   Built a modular web platform for Generative AI tools{" "}
@@ -36,7 +41,9 @@ export default function Experience() {
               </div>
             </div>
             <div className="flex items-start gap-2 text-sm text-neutral-800 md:text-base dark:text-neutral-200">
-              <div>✅</div>
+              <div>
+                <Check className="text-blue-500" />
+              </div>
               <div>
                 <strong>Designed a no-code AI app studio </strong> using React,
                 Next.js, and Tailwind, empowering teams to create and deploy AI
@@ -44,7 +51,9 @@ export default function Experience() {
               </div>
             </div>
             <div className="flex items-start gap-2 text-sm text-neutral-800 md:text-base dark:text-neutral-200">
-              <div>✅</div>
+              <div>
+                <Check className="text-blue-500" />
+              </div>
               <div>
                 <strong>Engineered a scalable ML analytics API </strong> for
                 manufacturing data using FastAPI, Docker, and Kubernetes,
@@ -53,7 +62,9 @@ export default function Experience() {
               </div>
             </div>
             <div className="flex items-start gap-2 text-sm text-neutral-800 md:text-base dark:text-neutral-200">
-              <div>✅</div>
+              <div>
+                <Check className="text-blue-500" />
+              </div>
               <div>
                 <strong>Independently owned an AI search platform</strong> for
                 manufacturing data, delivering up to{" "}
@@ -95,7 +106,9 @@ export default function Experience() {
           </div>
           <div className="my-8">
             <div className="flex items-start gap-2 text-sm text-neutral-800 md:text-base dark:text-neutral-200">
-              <div>✅</div>
+              <div>
+                <Check className="text-blue-500" />
+              </div>
               <div>
                 <strong>Implemented OAuth 2.0 SSO </strong>
                 across several enterprise apps, unifying authentication and
@@ -103,7 +116,9 @@ export default function Experience() {
               </div>
             </div>
             <div className="flex items-start gap-2 text-sm text-neutral-800 md:text-base dark:text-neutral-200">
-              <div>✅</div>
+              <div>
+                <Check className="text-blue-500" />
+              </div>
               <div>
                 <strong>Integrated fine-grained authorization controls </strong>
                 for several web apps and REST APIs using Spring Boot and
@@ -141,7 +156,9 @@ export default function Experience() {
           </div>
           <div className="my-8">
             <div className="flex items-start gap-2 text-sm text-neutral-800 md:text-base dark:text-neutral-200">
-              <div>✅</div>
+              <div>
+                <Check className="text-blue-500" />
+              </div>
               <div>
                 <strong>Built a custom Kanban board app</strong> with Spring and
                 MySQL, improving agile collaboration and task tracking for
@@ -149,7 +166,9 @@ export default function Experience() {
               </div>
             </div>
             <div className="flex items-start gap-2 text-sm text-neutral-800 md:text-base dark:text-neutral-200">
-              <div>✅</div>
+              <div>
+                <Check className="text-blue-500" />
+              </div>
               <div>
                 <strong>Streamlined the onboarding process</strong> for an
                 employee resource group, winning 1st place in the Dell Intern

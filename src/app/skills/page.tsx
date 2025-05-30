@@ -1,6 +1,7 @@
 "use client";
 
 import { Card } from "@/components/ui/card";
+import { Drill, Hammer } from "lucide-react";
 import { motion } from "motion/react";
 import Image from "next/image";
 
@@ -245,23 +246,24 @@ export default function Skills() {
   ];
 
   return (
-    <div className="mt-12 mb-24 lg:mt-20">
+    <div className="">
       <motion.div
         initial={{
           opacity: 0,
-          y: 50,
+          x: -50,
         }}
-        animate={{
-          y: 0,
+        whileInView={{
           opacity: 1,
+          x: 0,
         }}
+        viewport={{ once: true }}
         transition={{
           duration: 0.6,
-          delay: 0,
         }}
       >
-        <div className="text-4xl md:text-6xl font-bold">
-          A Powerful Toolbox{"\u00A0"}🔨
+        <div className="text-4xl md:text-6xl font-bold flex items-center gap-4">
+          A Powerful Toolbox{"\u00A0"}
+          <Drill className="text-blue-500 w-16 h-16" />
         </div>
         <div className="text-lg text-neutral-800 dark:text-neutral-300 mt-5">
           A well-rounded set of technical skills, continuously sharpened to keep
@@ -274,16 +276,15 @@ export default function Skills() {
           <motion.div
             initial={{
               opacity: 0,
-              y: 100,
+              y: 50,
             }}
             whileInView={{
-              y: 0,
               opacity: 1,
+              y: 0,
             }}
-            viewport={{ once: true, amount: 0.2 }}
+            viewport={{ once: true }}
             transition={{
               duration: 0.6,
-              delay: 0,
             }}
           >
             <div className="text-2xl md:text-3xl font-semibold mt-20">
@@ -298,16 +299,15 @@ export default function Skills() {
                 className="h-full flex"
                 initial={{
                   opacity: 0,
-                  y: 100,
+                  y: 50,
                 }}
                 whileInView={{
-                  y: 0,
                   opacity: 1,
+                  y: 0,
                 }}
-                viewport={{ once: true, amount: 0.2 }}
+                viewport={{ once: true }}
                 transition={{
                   duration: 0.6,
-                  delay: 0,
                 }}
               >
                 <Card className="p-5 border-neutral-400 dark:border-neutral-800 gap-3 bg-white/50 dark:bg-neutral-950/50">

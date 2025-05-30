@@ -20,6 +20,7 @@ import { Button } from "../ui/button";
 import { IconMenu2 } from "@tabler/icons-react";
 import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
 import Link from "next/link";
+import { BadgeCheck, Code, Terminal } from "lucide-react";
 
 const menuItems = [
   { name: "Home", href: "/" },
@@ -30,16 +31,17 @@ const menuItems = [
 
 export default function Navbar() {
   return (
-    <div className="flex justify-between py-4 md:py-10 w-full">
+    <div className="flex justify-between w-full">
       <Link
         href="/"
-        className="font-bold text-xl flex items-center cursor-pointer"
+        className="font-bold text-xl flex items-center cursor-pointer gap-3"
       >
-        <Avatar className="mr-2">
-          <AvatarImage src="eric-profile-sm.jpg" alt="Eric Waters" />
-          <AvatarFallback>CN</AvatarFallback>
-        </Avatar>
-        Eric Waters
+        {/* <Avatar className="mr-2">
+          <AvatarImage src="eric-blue.jpg" alt="Eric Waters" />
+          <AvatarFallback className="text-sm">EW</AvatarFallback>
+        </Avatar> */}
+        <span>Eric Waters</span>
+        <BadgeCheck className="text-blue-500 h-6 w-6" />
       </Link>
       <div className="flex">
         <NavigationMenu className="hidden lg:flex">

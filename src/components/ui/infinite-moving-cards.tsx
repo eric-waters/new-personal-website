@@ -12,6 +12,7 @@ export const InfiniteMovingCards = ({
 }: {
   items: {
     name: string;
+    icon: React.ComponentType<{ className?: string }>;
     image: string;
     imageSize: number;
     description: string;
@@ -98,12 +99,18 @@ export const InfiniteMovingCards = ({
             className="relative w-[350px] max-w-full shrink-0 rounded-2xl border bg-white/50 border-neutral-400/50 px-8 py-6 md:w-[450px] dark:border-neutral-800 dark:bg-neutral-950/50"
             key={idx}
           >
-            <img
+            {/* <img
               src={item.image}
               alt={item.name}
               width={item.imageSize}
               className="mb-5"
-            />
+            /> */}
+            <div className="flex gap-2 items-center mb-3">
+              <item.icon className="text-blue-500 h-8 w-8" />
+              <span className="text-2xl font-bold align-middle">
+                {item.name}
+              </span>
+            </div>
             <blockquote className="flex flex-col">
               <div
                 aria-hidden="true"

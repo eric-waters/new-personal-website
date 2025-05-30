@@ -1,4 +1,5 @@
 "use client";
+import { TrendingUp, Wrench } from "lucide-react";
 import { useScroll, useTransform, motion } from "motion/react";
 import React, { useEffect, useRef, useState } from "react";
 
@@ -27,20 +28,30 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
   const heightTransform = useTransform(
     scrollYProgress,
     [0, 1],
-    [0, height * 1.15] // Adjust the multiplier as needed
+    [0, height * 1] // Adjust the multiplier as needed
   );
   const opacityTransform = useTransform(scrollYProgress, [0, 0.1], [0, 1]);
 
   return (
-    <div className="w-full font-sans mt-12 mb-24 lg:mt-20" ref={containerRef}>
+    <div className="w-full font-sans mt-12 mb-0 lg:mt-0" ref={containerRef}>
       <motion.div
-        initial={{ opacity: 0, x: -50 }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 1 }}
+        initial={{
+          opacity: 0,
+          x: 100,
+        }}
+        whileInView={{
+          opacity: 1,
+          x: 0,
+        }}
+        viewport={{ once: true }}
+        transition={{
+          duration: 0.6,
+        }}
       >
-        <div className="max-w-7xl mx-auto">
-          <h2 className="text-4xl md:text-6xl mb-4 text-black dark:text-white font-bold">
-            Quality Code, Real{"\u00A0"}Results{"\u00A0"}🔧
+        <div className="mx-auto">
+          <h2 className="text-4xl md:text-6xl mb-4 text-black dark:text-white font-bold flex items-center">
+            Quality Code, Real{"\u00A0"}Results{"\u00A0"}
+            <TrendingUp className="text-blue-500 w-16 h-16 ml-3" />
           </h2>
           <p className="text-lg text-neutral-800 dark:text-neutral-400 mt-5">
             Over 2 years of professionally building and shipping full-stack
@@ -53,14 +64,23 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
         {data.map((item, index) => (
           <motion.div
             key={index}
-            initial={{ opacity: 0, x: -50 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1, delay: (index + 1) * 0.2 }}
+            initial={{
+              opacity: 0,
+              x: 100,
+            }}
+            whileInView={{
+              opacity: 1,
+              x: 0,
+            }}
+            viewport={{ once: true }}
+            transition={{
+              duration: 0.6,
+            }}
           >
             <div className="flex justify-start mt-12 md:mt-24 md:gap-10">
               <div className="sticky flex flex-col md:flex-row z-40 items-center top-40 self-start max-w-xs lg:max-w-sm md:w-full">
-                <div className="h-10 absolute left-3 md:left-3 w-10 rounded-full bg-white dark:bg-neutral-950 flex items-center justify-center">
-                  <div className="h-4 w-4 rounded-full bg-neutral-200 dark:bg-neutral-800 border border-neutral-300 dark:border-neutral-700 p-2" />
+                <div className="h-10 absolute left-3 md:left-3 w-10 rounded-full bg-blue-500 dark:bg-neutral-950 flex items-center justify-center">
+                  <div className="h-4 w-4 rounded-full bg-white dark:bg-neutral-800 border border-neutral-300 dark:border-neutral-700 p-2" />
                 </div>
                 <h3 className="hidden md:block text-xl md:pl-20 md:text-5xl font-bold text-neutral-600 dark:text-neutral-500 ">
                   {item.title}
@@ -86,7 +106,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
               height: heightTransform,
               opacity: opacityTransform,
             }}
-            className="absolute inset-x-0 top-0  w-[2px] bg-gradient-to-t from-purple-500 via-blue-500 to-transparent from-[0%] via-[10%] rounded-full"
+            className="absolute inset-x-0 top-0  w-[2px] bg-gradient-to-t from-blue-500 via-blue-500 to-transparent from-[0%] via-[10%] rounded-full"
           />
         </div>
       </div>
