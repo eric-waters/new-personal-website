@@ -23,7 +23,7 @@ import Link from "next/link";
 import { BadgeCheck, Code, Terminal } from "lucide-react";
 
 const menuItems = [
-  { name: "Home", href: "/" },
+  // { name: "Home", href: "/" },
   { name: "Experience", href: "/experience" },
   { name: "Education", href: "/education" },
   { name: "Skills", href: "/skills" },
@@ -32,17 +32,14 @@ const menuItems = [
 export default function Navbar() {
   return (
     <div className="flex justify-between w-full">
-      <Link
-        href="/"
-        className="font-bold text-xl flex items-center cursor-pointer gap-3"
-      >
+      <div className="font-bold text-xl flex items-center gap-2">
         {/* <Avatar className="mr-2">
           <AvatarImage src="eric-blue.jpg" alt="Eric Waters" />
           <AvatarFallback className="text-sm">EW</AvatarFallback>
         </Avatar> */}
         <span>Eric Waters</span>
         <BadgeCheck className="text-blue-500 h-6 w-6" />
-      </Link>
+      </div>
       <div className="flex">
         <NavigationMenu className="hidden lg:flex">
           <NavigationMenuList>

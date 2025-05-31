@@ -98,7 +98,7 @@ export default function HeroSection() {
               <motion.p
                 initial={{
                   opacity: 0,
-                  x: 30,
+                  x: -30,
                 }}
                 whileInView={{
                   opacity: 1,
@@ -116,7 +116,7 @@ export default function HeroSection() {
               <motion.div
                 initial={{
                   opacity: 0,
-                  y: -30,
+                  y: 30,
                 }}
                 whileInView={{
                   opacity: 1,
@@ -129,7 +129,7 @@ export default function HeroSection() {
               >
                 <div className="flex gap-4 mt-2 justify-center lg:justify-start">
                   <a href="/resume.pdf" download>
-                    <button className="w-40 flex items-center justify-center gap-2 transform rounded-lg bg-blue-500 px-6 py-2 font-medium text-white transition-all duration-300 hover:-translate-y-0.6 hover:bg-gray-800 dark:hover:bg-gray-200 cursor-pointer">
+                    <button className="w-40 flex items-center justify-center gap-2 transform rounded-lg bg-blue-500 px-6 py-2 font-medium text-white transition-all duration-300 hover:-translate-y-0.6 hover:bg-blue-600 cursor-pointer">
                       <IconDownload />
                       Resume
                     </button>
@@ -149,11 +149,11 @@ export default function HeroSection() {
             <motion.div
               initial={{
                 opacity: 0,
-                filter: "blur(4px)",
+                x: 30,
               }}
               animate={{
                 opacity: 1,
-                filter: "blur(0px)",
+                x: 0,
               }}
               viewport={{ once: true }}
               transition={{
@@ -166,7 +166,7 @@ export default function HeroSection() {
                   alt="Eric Waters"
                   width={1125}
                   height={1125}
-                  className="aspect-square max-w-60 rounded-full border bg-neutral-50/50 border-neutral-400/50 dark:bg-neutral-950/40 dark:border-neutral-800"
+                  className="aspect-square max-w-80 rounded-full border bg-neutral-50/50 border-neutral-400/50 dark:bg-neutral-950/40 dark:border-neutral-800"
                   priority
                 />
               </div>
